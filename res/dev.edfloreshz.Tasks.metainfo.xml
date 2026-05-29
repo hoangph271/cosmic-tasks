@@ -6,19 +6,40 @@
   </developer>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-only</project_license>
-  <project_group>COSMIC</project_group>
   <content_rating type="oars-1.1" />
   <update_contact>edfloreshz@proton.me</update_contact>
-  <url type="homepage">https://github.com/edfloreshz/tasks</url>
-  <url type="bugtracker">https://github.com/edfloreshz/tasks</url>
+  <url type="homepage">https://tasks.edfloreshz.dev/</url>
+  <url type="bugtracker">https://github.com/cosmic-utils/tasks/issues</url>
+  <url type="vcs-browser">https://github.com/cosmic-utils/tasks</url>
+  <url type="donation">https://ko-fi.com/edfloreshz</url>
+  <url type="contact">https://edfloreshz.dev</url>
+  <url type="contribute">https://github.com/cosmic-utils/tasks</url>
+  <url type="translate">https://github.com/cosmic-utils/tasks/tree/main/i18n</url>
   <name>Tasks</name>
+  <name xml:lang="cs">Úkoly</name>
+  <name xml:lang="hu">Feladatok</name>
   <summary>Get things done</summary>
+  <summary xml:lang="cs">Dokončete, co jste začali</summary>
+  <summary xml:lang="hu">Intézd el a teendőidet</summary>
+  <summary xml:lang="uk">Доводьте справи до кінця</summary>
   <description>
     <p>A simple task management app, reaching across the cosmos to help you get things done</p>
+    <p xml:lang="cs">Jednoduchá aplikace pro správu úkolů, která vám pomůže dokončit, co jste začali</p>
+    <p xml:lang="hu">Egy egyszerű feladatkezelő alkalmazás, amely a kozmoszon átívelve segít neked a teendőid elvégzésében</p>
+    <p xml:lang="uk">Від одного завдання — до космічного порядку. Простий менеджер завдань, що приборкує будь-який хаос.</p>
     <ul>
         <li>Exceptional performance and responsiveness.</li>
+        <li xml:lang="cs">Výjimečný výkon a rychlá odezva.</li>
+        <li xml:lang="hu">Kiemelkedő teljesítmény és gyors reakcióidő.</li>
+        <li xml:lang="uk">Виняткова продуктивність і швидкий відгук.</li>
         <li>Effortless keyboard shortcut support.</li>
+        <li xml:lang="cs">Bezproblémová podpora klávesových zkratek.</li>
+        <li xml:lang="hu">Zökkenőmentes gyorsbillentyű-támogatás.</li>
+        <li xml:lang="uk">Зручна підтримка сполучень клавіш.</li>
         <li>Expressive emoji integration.</li>
+        <li xml:lang="cs">Expresivní integrace emoji.</li>
+        <li xml:lang="hu">Kifejező emodzsi-integráció.</li>
+        <li xml:lang="uk">Виразна інтеграція Emoji.</li>
     </ul>
   </description>
   <branding>
@@ -28,6 +49,87 @@
   <icon type="remote" height="256" width="256">https://raw.githubusercontent.com/edfloreshz/tasks/master/res/icons/hicolor/scalable/apps/dev.edfloreshz.Tasks.svg</icon>
   <launchable type="desktop-id">dev.edfloreshz.Tasks.desktop</launchable>
   <releases>
+    <release version="0.2.4" date="2026-05-06">
+        <description>
+            <p>Reminders and manual reordering </p>
+            <ul>
+                <li>You can now set a reminder and receive a notification</li>
+                <li>Added support for manual task reodering via drag and drop</li>
+            </ul>
+        </description>
+    </release>
+    <release version="0.2.3" date="2026-05-04">
+        <description>
+            <p>Trash &amp; Favorites</p>
+            <ul>
+                <li>Added Trash, a special list for managing deleted tasks</li>
+                <li>Added support for restoring and permanently deleting tasks from Trash</li>
+                <li>Added Favorites, a special list that collects your favorite tasks</li>
+                <li>Added a favorite toggle button to tasks</li>
+                <li>Added "Show Favorites" and "Hide Completed" toggles in Settings</li>
+                <li>Sort menu items now display a checkmark when selected</li>
+                <li>Fixed a bug with configuration persistence</li>
+            </ul>
+        </description>
+    </release>
+    <release version="0.2.2" date="2026-05-04">
+        <description>
+            <p>Quality of life improvements</p>
+            <ul>
+                <li>When deleting a task, a banner is shown with an option to undo.</li>
+                <li>It is now possible to delete a task from the edit pane.</li>
+                <li>The edit pane now displays tasks created and completed dates.</li>
+                <li>The new task input is now focused on app start and when selecting or creating a list.</li>
+                <li>Dialog inputs are selected when creating or renaming a list.</li>
+                <li>Search input is selected when opened, it also handles discard events.</li>
+            </ul>
+        </description>
+    </release>
+    <release version="0.2.1" date="2026-05-03">
+        <description>
+            <p>Bug fixes and improvements</p>
+            <ul>
+                <li>Fixed a layout invalidation issue with sub-tasks.</li>
+                <li>Fixed a bug causing due dates to revert to their previous value.</li>
+                <li>Fixed a bug where lists were deleted from the filesystem but the change wasn't reflected in the UI.</li>
+                <li>Menu options are now disabled when no list is selected.</li>
+                <li>Added migration code to handle the legacy store schema.</li>
+            </ul>
+            <p>Internationalization improvements</p>
+            <ul>
+                <li>Added a new translation key to support displaying creation timestamps.</li>
+                <li>Updated French, Czech, and Ukrainian translations.</li>
+            </ul>
+        </description>
+    </release>
+    <release version="0.2.0" date="2025-05-27">
+        <description>
+            <p>Powerful new features! 🚀</p>
+            <ul>
+                <li>✨ <em>Sub-tasks support</em></li>
+                <li>🔍 <em>Search functionality</em></li>
+                <li>📊 <em>Task sorting</em></li>
+                <li>🎨 <em>Expanded icon library</em></li>
+                <li>🌍 <em>Enhanced internationalization</em></li>
+                <li>🔧 <em>Better task management</em></li>
+                <li>⌨️ <em>Improved keyboard shortcuts</em></li>
+                <li>🎯 <em>Hide completed tasks</em></li>
+                <li>📋 <em>Enhanced export options</em></li>
+                <li>🐛 <em>Bug fixes and performance improvements</em></li>
+            </ul>
+        </description>
+    </release>
+    <release version="0.1.1" date="2024-11-06">
+        <description>
+            <p>Text editor for notes 🎉</p>
+            <ul>
+                <li>Notes now has a multiline text editor</li>
+                <li>The window has a border</li>
+                <li>The theme is now synced with COSMIC</li>
+                <li>The about page has been revamped</li>
+            </ul>
+        </description>
+    </release>
     <release version="0.1.0" date="2024-07-02">
         <description>
             <p>Initial release! 🎉</p>
@@ -43,15 +145,60 @@
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/edfloreshz/tasks/main/res/screenshots/window-light.png</image>
-      <caption>Light mode</caption>
+      <caption>Main application interface</caption>
+      <caption xml:lang="cs">Hlavní rozhraní aplikace</caption>
+      <caption xml:lang="hu">Az alkalmazás fő felülete</caption>
+      <caption xml:lang="uk">Світла тема інтерфейсу</caption>
     </screenshot>
     <screenshot>
       <image>https://raw.githubusercontent.com/edfloreshz/tasks/main/res/screenshots/window-dark.png</image>
-      <caption>Dark mode</caption>
+      <caption>Main application interface</caption>
+      <caption xml:lang="cs">Hlavní rozhraní aplikace</caption>
+      <caption xml:lang="hu">Az alkalmazás fő felülete</caption>
+      <caption xml:lang="uk">Темна тема інтерфейсу</caption>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/edfloreshz/tasks/main/res/screenshots/details-light.png</image>
+      <caption>Task details</caption>
+      <caption xml:lang="cs">Detaily úkolu</caption>
+      <caption xml:lang="hu">Feladat részletei</caption>
+      <caption xml:lang="uk">Світла тема деталі завдання</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/edfloreshz/tasks/main/res/screenshots/details-dark.png</image>
+      <caption>Task details</caption>
+      <caption xml:lang="cs">Detaily úkolu</caption>
+      <caption xml:lang="hu">Feladat részletei</caption>
+      <caption xml:lang="uk">Темна тема деталі завдання</caption>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/edfloreshz/tasks/main/res/screenshots/new-list-light.png</image>
+      <caption>Create a new list</caption>
+      <caption xml:lang="cs">Tvorba nového seznamu</caption>
+      <caption xml:lang="hu">Új lista létrehozása</caption>
+      <caption xml:lang="uk">Світла тема створення нового списку</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/edfloreshz/tasks/main/res/screenshots/new-list-dark.png</image>
+      <caption>Create a new list</caption>
+      <caption xml:lang="cs">Tvorba nového seznamu</caption>
+      <caption xml:lang="hu">Új lista létrehozása</caption>
+      <caption xml:lang="uk">Темна тема створення нового списку</caption>
     </screenshot>
   </screenshots>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <requires>
+    <display_length compare="ge">360</display_length>
+    <internet>offline-only</internet>
+  </requires>
+  <supports>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </supports>
   <provides>
-    <id>dev.edfloreshz.Tasks.desktop</id>
+    <id>com.system76.CosmicApplication</id>
     <binary>tasks</binary>
   </provides>
 </component>

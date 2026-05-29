@@ -1,47 +1,61 @@
 [package]
 name = "tasks"
-version = "0.1.0"
+version = "0.2.4"
 edition = "2021"
 
 [dependencies]
-i18n-embed = { version = "0.14", features = [
+i18n-embed-fl = "0.10.0"
+rust-embed = "8"
+open = "5.3.2"
+directories = "6.0.0"
+cli-clipboard = "0.4.0"
+slotmap = "1.0.7"
+ron = "0.11.0"
+thiserror = "2.0.17"
+tracing = "0.1.41"
+time = { version = "0.3.47", features = ["serde-human-readable"] }
+tracing-subscriber = { version = "0.3.20", features = ["env-filter"] }
+serde = { version = "1", features = ["derive"] }
+uuid = { version = "1.18.1", features = ["v4"] }
+i18n-embed = { version = "0.16.0", features = [
     "fluent-system",
     "desktop-requester",
 ] }
-i18n-embed-fl = "0.8"
-once_cell = "1.19"
-rust-embed = "8"
-serde = { version = "1", features = ["serde_derive"] }
-log = "0.4"
-env_logger = "0.11"
-paste = "1.0"
-open = "5.0.2"
-dirs = "5.0.1"
-chrono = "0.4.35"
-tokio = "1"
-tasks-core = { path = "src/core" }
-tracing = "0.1.40"
-cli-clipboard = "0.4.0"
-slotmap = "1.0.7"
-emojis = "0.6.1"
+jiff = { version = "0.2.24", features = ["serde"] }
+notify-rust = "4.17.0"
 
+[dependencies.rust-extensions]
+git = "https://github.com/edfloreshz/rust-extensions.git"
+
+# See https://github.com/pop-os/libcosmic/blob/master/Cargo.toml for available features.
 [dependencies.libcosmic]
 git = "https://github.com/pop-os/libcosmic.git"
 default-features = false
-features = ["multi-window", "tokio", "winit", "wgpu", "dbus-config"]
+features = [
+    # About widget for the app
+    "about",
+    # Support creating additional application windows.
+    "multi-window",
+    # On app startup, focuses an existing instance if the app is already open
+    "single-instance",
+    # Uses tokio as the executor for the runtime
+    "tokio",
+    # Windowing support for X11, Windows, Mac, & Redox
+    "winit",
+    # GPU-accelerated rendering
+    "wgpu",
+]
 
-[dependencies.smol_str]
-version = "0.2.1"
-features = ["serde"]
-
-[target.'cfg(unix)'.dependencies]
-fork = "0.1"
-
-[build-dependencies]
-vergen = { version = "8", features = ["git", "gitcl"] }
+[target.'cfg(target_os = "linux")'.dependencies.libcosmic]
+git = "https://github.com/pop-os/libcosmic.git"
+features = [
+    # Accessibility support
+    "a11y",
+    # Uses cosmic-settings-daemon to watch for config file changes
+    "dbus-config",
+    # Add Wayland support to winit
+    "wayland",
+]
 
 # [patch."https://github.com/pop-os/libcosmic.git"]
-# libcosmic = { git = "https://github.com/edfloreshz/libcosmic.git", branch = "editable_input_internal" }
-
-# [patch."https://github.com/pop-os/libcosmic.git"]
-# libcosmic = { path = "../libcosmic" }
+# libcosmic = { path = "../../edfloreshz-ext/libcosmic" }

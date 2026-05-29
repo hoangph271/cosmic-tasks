@@ -1,63 +1,140 @@
-empty-folder = Tom katalog
-empty-folder-hidden = Tom katalog (har dolda objekt)
-filesystem = Filsystem
-home = Hem
+tasks = Tasks
+favorites = Favoriter
 trash = Papperskorg
+empty-trash = Töm papperskorg
+no-favorites = Inga favoriter
+no-favorites-suggestion = Markera uppgifter som favoriter för att se dem här
+no-trash = Papperskorg är tom
+no-trash-suggestion = Borttagna uppgifter visas här
+restore = Återställ
+restore-all = Återställ alla
+delete-permanently = Ta bort permanent
+deleted-from = Ta bort från "{ $list }"
+deleted-at = Borttagen { $date }
+unknown-list = Okänd lista
+trash-emptied = Papperskorg tömd
+about = Om
 
-# Dialog
+# Innehåll
+add-new-task = Lägg till ny uppgift
+search-tasks = Sök uppgifter
+
+# Detaljer
+title = Titel
+details = Detaljer
+favorite = Favorit
+priority = Prioritet
+due-date = Förfallodatum
+reminder = Påminnelse
+created-at = Skapad
+completed-at = Slutförd
+notes = Anteckningar
+add-notes = Lägg till anteckningar
+
+# Tom
+no-tasks = Inga uppgifter
+no-tasks-suggestion = Prova att lägga till en uppgift med textfältet nedan
+no-list-selected = Ingen lista vald
+no-list-suggestion = Skapa eller välj en ny lista för att komma igång
+
+sub-tasks = Deluppgifter
+add-sub-task = Lägg till ny deluppgift
+move-to-trash = Flytta till papperskorg
+
+# Ny lista dialogruta
+create-list = Skapa en ny lista
+
+# Byt namn på lista dialogruta
+rename-list = Byt namn på lista
+
+# Radera lista dialogruta
+delete-list = Den valda listan håller på att raderas
+delete-list-confirm = Är du säker på att du vill ta bort "{ $name }"?
+
+# Banner för ångra borttagning
+undo = Ångra
+task-deleted = "{ $title }" raderad
+deletion-countdown = { $seconds }:er
+
+# Ta bort lista dialogruta
+delete-list = Den valda listan är på väg att raderas
+delete-list-confirm = Är du säker på att du vill ta bort den här listan?
+
+# Ikon dialogruta
+icon = Ställ in ikon
+icon-select = Välj en ikon
+icon-select-body = Välj en ikon för listan
+search-icons = Sök ikoner...
+
+# Datum dialogruta
+select-date = Välj ett datum
+select-date-time = Välj datum och tid
+hour = Timme
+minute = Minut
+set-reminder = Ställ in påminnelse
+clear-reminder = Rensa påminnelse
+
+# Exportera dialogruta
+export = Exportera
+
+# Dialogrutor
 cancel = Avbryt
-open = Öppna
+ok = Ok
+copy = Kopiera
+confirm = Bekräfta
+save = Spara
+list-name = Listnamn
 
-# List view
-name = Namn
-modified = Modifierad
-size = Storlek
+# Kontext sidor
 
-# Context Pages
+## Om
+git-description = Git commit {$hash} på {$date}
 
-## Operations
-operations = Operationer
-pending = Väntar
-failed = Misslyckades
-complete = Slutförd
-
-## Properties
-properties = Egenskaper
-
-## Settings
+## Inställningar
 settings = Inställningar
 
-### Appearance
+### Utseende
 appearance = Utseende
+show-favorites = Visa favoriter
 theme = Tema
 match-desktop = Matcha skrivbordet
 dark = Mörkt
 light = Ljust
 
-# Context menu
-new-file = Ny fil
-new-folder = Ny katalog
-move-to-trash = Flytta till papperskorg
-restore-from-trash = Återställ från papperskorgen
+# Meny
 
-# Menu
-
-## File
+## Fil
 file = Fil
-new-tab = Ny flik
 new-window = Nytt fönster
-close-tab = Stäng flik
+new-list = Ny lista
 quit = Avsluta
 
-## Edit
+## Redigera
 edit = Redigera
-cut = Klipp ut
-copy = Kopiera
-paste = Klistra in
-select-all = Välj alla
+rename = Byt namn
+delete = Ta bort
 
-## View
+## Visa
 view = Visa
-grid-view = Rutnätsvy
-list-view = Listvy
-menu-settings = Inställningar...
+menu-settings = Inställningar
+menu-about = Om Tasks...
+hide-completed = Dölj slutförda
+
+## Om
+repository = Förråd
+support = Support
+website = Hemsida
+
+## Fel
+cause = Orsak
+oops-something-wrong = Oops! Något gick fel.
+error-title = Tasks - Fel
+
+# Sortera meny
+sort = Sortera
+sort-name-asc = Namn A-Ö
+sort-name-desc = Namn Ö-A
+sort-date-asc = Datum tillagd (Äldst till Nyast)
+sort-date-desc = Datum tillagd (Nyast till Äldst)
+sort-manual = Manuell
+

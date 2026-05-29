@@ -1,9 +1,10 @@
-tasks = COSMIC Задаци
+tasks = Задаци
 trash = Отпад
 about = О програму
 
 # Content
 add-new-task = Додај нови задатак
+search-tasks = Претражи задатке
 
 # Details
 title = Наслов
@@ -13,6 +14,7 @@ priority = Приоритет
 due-date = Рок
 reminder = Подсетник
 notes = Напомене
+add-notes = Додај напомене
 
 # Empty
 no-tasks = Нема задатака
@@ -37,13 +39,18 @@ delete-list-confirm = Да ли сте сигурни да желите да и�
 icon = Постави иконицу
 icon-select = Изаберите иконицу
 icon-select-body = Изаберите иконицу за списак
+search-icons = Претражи иконице...
 
 # Date Dialog
 select-date = Изаберите датум
 
+# Export Dialog
+export = Извези
+
 # Dialogs
 cancel = Поништи
 ok = У реду
+copy = Копирај
 confirm = Потврди
 save = Сачувај
 list-name = Име списка
@@ -52,9 +59,6 @@ list-name = Име списка
 
 ## About
 git-description = Git commit {$hash}, {$date}
-
-## Properties
-properties = Својства
 
 ## Settings
 settings = Подешавања
@@ -81,5 +85,23 @@ delete = Избриши
 
 ## View
 view = Приказ
-menu-settings = Подешавања...
-menu-about = О COSMIC Задацима...
+menu-settings = Подешавања
+menu-about = О Задацима...
+hide-completed = Сакриј завршене
+
+## About
+repository = Рeпозиторијум
+support = Подршка
+website = Вебсајт
+
+## Error
+cause = Узрок
+oops-something-wrong = Упс! Нешто није у реду.
+error-title = Задаци - Грешка
+
+# Sort Menu
+sort = Сортирај
+sort-name-asc = Назив A-Š
+sort-name-desc = Назив Š-A
+sort-date-asc = Датум додавања (Старо ка Новом)
+sort-date-desc = Датум додавања (Ново ка Старом)
